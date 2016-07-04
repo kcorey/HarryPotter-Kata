@@ -11,9 +11,9 @@ NSArray *inputArray = @[ @2, @2, @2, @1, @1];
 
 NSDictionary *result = [PermutationSearcher findMinimumForOrder:inputArray];
 
-// Each node looks like this:
+// The dictionary looks like this:
 // @{cost:5160 discounts:@[3,2,1]}
-// cost - price in whole pennies
+// cost - price in whole cents (€, not $)
 // discounts - The best discount scheme returned from whats left.  3 = the first 3 available books, then the first 2, then the last one remaining.
 
 Full Specification
